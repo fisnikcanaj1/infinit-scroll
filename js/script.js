@@ -88,7 +88,7 @@ function infinitScroll(){
         });
     }
 
-    $(window).scroll(function () {
+    $(window).on('scroll', function () {
         if ($(this).scrollTop() + $(this).height() + 2 >= $(document).height()) {
             myIndex++;
 
