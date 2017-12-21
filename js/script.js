@@ -90,7 +90,7 @@ function infinitScroll(){
 
     $(window).scroll(function () {
         var currentLocation = window.pageYOffset;
-        if (position == endLocation || currentLocation == endLocation || ( (window.innerHeight + currentLocation) >= document.body.scrollHeight )) ) {
+        if (position == endLocation || currentLocation == endLocation || ((window.innerHeight + currentLocation) >= document.body.scrollHeight) ) {
             myIndex++;
 
             var url = "https://mobile.developersgrave.com/v2.0/api/users/38695/blog/page/" + myIndex + "/size/" + pageSize;
