@@ -89,7 +89,7 @@ function infinitScroll(){
     }
 
     $(window).scroll(function () {
-        if (Math.floor($(window).scrollTop() + $(window).height() + 1) == $(document).height()) {
+        if (Math.floor($(window).scrollTop() + $(window).height() + 1) >= $(document).height()) {
             myIndex++;
 
             var url = "https://mobile.developersgrave.com/v2.0/api/users/38695/blog/page/" + myIndex + "/size/" + pageSize;
